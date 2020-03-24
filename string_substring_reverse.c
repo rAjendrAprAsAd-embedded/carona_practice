@@ -14,7 +14,7 @@ void printReverse(char arr[])
  	 while(arr[k]!= ' ' && k!=length)
 	 {
         	k++;
-        } 
+         } 
 	
 	dummy=i;i=k+1;
 	k--;
