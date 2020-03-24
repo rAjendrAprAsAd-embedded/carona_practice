@@ -1,0 +1,19 @@
+Conditional compilation in C programming language: Conditional compilation as the name implies that the code is compiled if certain condition(s) hold true. Normally we use if keyword for checking some condition so we have to use something different so that compiler can determine whether to compile the code or not. The different thing is #if.
+
+Conditional compilation is used during pre-processing stage to include / exclude code to be compiled depending upon your need. It’s very useful in creating platform independent code where porting the code to another platform say from Unix to Windows or to different CPU architecture requires no changes to the source files.
+
+One simple example is in Windows, directory path delimiter is ‘\’ where as in Unix it’s ‘/’ so you can set the path delimiter correctly using macros / conditional compilation. This will allow the same code to run correctly in Windows and Unix when compiled.
+
+Use conditional compilation to select particular sections of code to compile, while excluding other sections.
+Conditional compilation statements are designed to run during compile time, not at runtime.
+
+
+#if and #elif - compare the value of constant_expression to zero:
+
+#ifdef - checks for the existence of macro definitions
+
+#else - If the condition specified in the #if, #ifdef, or #ifndef - directive evaluates to 0, and the conditional compilation directive 	contains a preprocessor #else directive, the lines of code located between the preprocessor #else directive and the preprocessor 	#endif directive is selected by the preprocessor to be passed on to the compiler.
+
+#ifndef - checks whether a macro is not defined
+
+#endif - ends the conditional compilation directive
